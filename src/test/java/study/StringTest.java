@@ -10,7 +10,7 @@ public class StringTest {
         String actual = "abc".replace("b", "d");
         assertThat(actual).isEqualTo("adc");
     }
-    
+
     @Test
     void split(){
         String[] actual = "1,2".split(",");
@@ -28,6 +28,17 @@ public class StringTest {
 
     @Test
     void charAt(){
+        String actual = "abc";
 
+        //기존 테스트 후, 위치값 벗어나는 경우 확인
+        assertThat(actual.charAt(0)).isEqualTo('a');
+        assertThat(actual.charAt(1)).isEqualTo('b');
+        assertThat(actual.charAt(2)).isEqualTo('c');
+
+        assertThatThrownBy( () -> {
+            char val = actual.charAt(3);
+            throw new Exception("범위 초과");
+        }).isInstanceOf(IndexOutOfBoundsException.class)
+                .hasMessageContaining("String");
     }
 }
