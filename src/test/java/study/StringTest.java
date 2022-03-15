@@ -59,6 +59,8 @@ public class StringTest {
         assertThatExceptionOfType(IndexOutOfBoundsException.class)
                 .isThrownBy( () -> {
                     char val = actual.charAt(3);
+                    //컨펌 내용 : assert문에서 exception 발생라인 밑으로 평가안됨
+
                     System.out.println(val); //이 줄은 왜 들어가지?
                     throw new Exception("범위 초과");
                 } ).withMessageMatching("charAt2() - Index out of bounds issue");
