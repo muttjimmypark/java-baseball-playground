@@ -9,6 +9,5 @@ public class NumberBaseballMain {
             gameBase.action();
             resultView.gameOver();
         } while (resultView.getContinueFlag());
-
     }
 }
