@@ -10,6 +10,7 @@ public class ResultView {
 
     public void gameOver() {
         scanner = new Scanner(System.in);
+        continueFlag = false;
 
         System.out.println("3 스트라이크");
         System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
@@ -17,5 +18,9 @@ public class ResultView {
 
         if (scanner.nextInt() == 1)
             continueFlag = true;
+    }
+
+    public boolean getContinueFlag() {
+        return continueFlag;
     }
 }

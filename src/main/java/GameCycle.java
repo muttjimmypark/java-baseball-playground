@@ -3,13 +3,14 @@ import java.util.ArrayList;
 public class GameCycle {
     int ball;
     int strike;
-    ArrayList<Integer> userNumber = new ArrayList<Integer>();
+    ArrayList<Integer> userNumber = new ArrayList<>();
 
-    //InputView -> GameBoard
+    //InputView -> GameBase -> GameCycle
     public void setUserNumber(ArrayList<Integer> userNumber) {
-        this.userNumber.add(userNumber.get(0));
-        this.userNumber.add(userNumber.get(1));
         this.userNumber.add(userNumber.get(2));
+        this.userNumber.add(userNumber.get(1));
+        this.userNumber.add(userNumber.get(0));
+
     }
 
     public void countBallStrike(ArrayList<Integer> originNumber) {
@@ -36,5 +37,11 @@ public class GameCycle {
 
     public int getStrike() {
         return strike;
+    }
+
+    public void clearCount() {
+        ball = 0;
+        strike = 0;
+        this.userNumber.clear();
     }
 }
