@@ -1,9 +1,13 @@
+package numberBaseball;
+
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class InputView {
     Scanner scanner;
-    ArrayList<Integer> userInput = new ArrayList<>();
+    List<Integer> userInput = new ArrayList<>();
 
     public void action() {
         System.out.print("숫자를 입력해 주세요 : ");
@@ -14,9 +18,10 @@ public class InputView {
             userInput.add(firstInput % 10);
             firstInput /= 10;
         }
+        Collections.reverse(userInput);
     }
 
-    public ArrayList<Integer> getUserInput() {
+    public List<Integer> getUserInput() {
         return userInput;
     }
 

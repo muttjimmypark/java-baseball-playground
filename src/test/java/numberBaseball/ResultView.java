@@ -1,3 +1,5 @@
+package numberBaseball;
+
 import java.util.Scanner;
 
 public class ResultView {

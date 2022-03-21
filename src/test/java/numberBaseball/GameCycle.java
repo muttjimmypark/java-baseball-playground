@@ -1,19 +1,22 @@
+package numberBaseball;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class GameCycle {
     int ball;
     int strike;
-    ArrayList<Integer> userNumber = new ArrayList<>();
+    List<Integer> userNumber = new ArrayList<>();
 
-    //InputView -> GameBase -> GameCycle
-    public void setUserNumber(ArrayList<Integer> userNumber) {
-        this.userNumber.add(userNumber.get(2));
-        this.userNumber.add(userNumber.get(1));
+    //numberBaseball.InputView -> numberBaseball.GameBase -> numberBaseball.GameCycle
+    public void setUserNumber(List<Integer> userNumber) {
+        this.userNumber.clear();
         this.userNumber.add(userNumber.get(0));
-
+        this.userNumber.add(userNumber.get(1));
+        this.userNumber.add(userNumber.get(2));
     }
 
-    public void countBallStrike(ArrayList<Integer> originNumber) {
+    public void countBallStrike(List<Integer> originNumber) {
         if (originNumber.get(0).equals(userNumber.get(0)))
             strike++;
         if (originNumber.get(1).equals(userNumber.get(1)))
