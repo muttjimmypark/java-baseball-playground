@@ -1,7 +1,7 @@
 ### 구현할 기능 목록
 1. Numbers
     1. verifyNumbers : 1~9 사이의 서로 다른 수로 이루어진 3자리의 수가 되도록, 입력받은 숫자를 검증하여 boolean으로 응답하는 기능
-    2. makeComputerNumbers : 컴퓨터 측 랜덤 숫자를 생성하는 기능. verifiyNumbers에서 false 받으면 재생성
+    2. makeComputerNumbers : 컴퓨터 측 랜덤 숫자를 생성하는 기능.
 ####
 2. Compare : 3자리 숫자 2개(컴퓨터, 플레이어)를 입력받아 생성되며, 볼 판정값과 스트라이크 판정값을 확보할 수 있는 클래스
     1. existCount : 플레이어 측 숫자 3개 중, 컴퓨터 측에는 얼마나 들어있는지 세어보는 기능
