@@ -9,7 +9,7 @@
     4. exist, strike, ball의 getter : (볼 = existCount - strikeCount), (스트라이크  = strikeCount )
 ####
 3. UserInterface
-    1. scanPlayerNumbers : 플레이어 측 숫자를 입력받는 기능. [1-2]에서 verify하여 false를 받으면 재입력 요구
+    1. scanPlayerNumbers : 플레이어 측 숫자를 입력받는 기능. [1-1]에서 verify하여 false를 받으면 재입력 요구
     2. printBSMessage : 볼-스트라이크 값을 전달받아, 판정 결과를 String으로 구성 (볼, 스트라이크, 낫싱)
     3. endGameOrNew : 게임 종료 메시지와 새 게임 시작여부
 ####

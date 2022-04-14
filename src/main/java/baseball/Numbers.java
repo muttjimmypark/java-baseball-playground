@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Numbers {
-    public boolean verifyNumbers(List<Integer> inputNumbers) {
+    public static boolean verifyNumbers(List<Integer> inputNumbers) {
         if (inputNumbers.size() != 3) {
             return false;
         }
@@ -22,7 +22,7 @@ public class Numbers {
         return true;
     }
 
-    public List<Integer> makeComputerNumbers() {
+    public static List<Integer> makeComputerNumbers() {
         List<Integer> computerNumbers = new ArrayList<>();
 
         while (computerNumbers.size() < 3) {
