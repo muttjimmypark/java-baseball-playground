@@ -4,12 +4,9 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        while (true){
+        do {
             playGame();
-            if(UserInterface.endGameOrNew()) {
-                break;
-            }
-        }
+        } while (!UserInterface.endGameOrNew());
     }
 
     private static void playGame() {
