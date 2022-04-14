@@ -48,13 +48,18 @@ public class UserInterface {
         System.out.println(ball + "볼 " + strike + "스트라이크");
     }
 
-    public static int endGameOrNew() {
+    public static boolean endGameOrNew() {
         System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
         while (true) {
             System.out.print("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요 : ");
             int oneTwo = new Scanner(System.in).nextInt();
-            if (oneTwo == 1 || oneTwo == 2) {
-                return oneTwo;
+            if (oneTwo == 2) {
+                //endGame is true
+                return true;
+            }
+            if (oneTwo == 1) {
+                //newGame is false
+                return false;
             }
             System.out.println("잘못된 입력입니다.");
         }
