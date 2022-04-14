@@ -6,8 +6,7 @@
 2. Compare : 3자리 숫자 2개(컴퓨터, 플레이어)를 입력받아 생성되며, 볼 판정값과 스트라이크 판정값을 확보할 수 있는 클래스
     1. existCount : 플레이어 측 숫자 3개 중, 컴퓨터 측에는 얼마나 들어있는지 세어보는 기능
     2. strikeCount : 같은 자리에 같은 숫자가 들어있는 경우를 세어보는 기능
-    3. return : (볼 = existCount - strikeCount), (스트라이크  = strikeCount )
-    4. 변수 ball과 strike의 getter
+    4. exist, strike, ball의 getter : (볼 = existCount - strikeCount), (스트라이크  = strikeCount )
 ####
 3. UserInterface
     1. scanPlayerNumbers : 플레이어 측 숫자를 입력받는 기능. [1-2]에서 verify하여 false를 받으면 재입력 요구
