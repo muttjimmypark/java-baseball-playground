@@ -36,7 +36,7 @@ public class Compare {
 //            }
 //        }
 
-        strike = (int) IntStream.range(0,3)
+        strike = (int) IntStream.range(0, 3)
                 .filter(i -> (computerNumbers.get(i).equals(playerNumbers.get(i))))
                 .count();
     }
